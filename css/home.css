@@ -1,0 +1,13 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+h3{
+    font-size: 30px;
+}
+
+.menu{
+    text-align: center;
+}

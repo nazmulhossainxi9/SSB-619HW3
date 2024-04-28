@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSB-619 | HtmlElements</title>
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+<body>
+    
+    <div class="menu">
+        <a href="../index.html">Home |</a>
+        <a href="../html/form.html">Form | </a>
+        <a href="html_elements.html">HtmlElements</a><br><br><br>
+        <hr><br><br>
+    </div>
+    
+    <ol>
+        <li>
+            <h4>Nav element</h4>
+            <nav>
+                <a href="/html/">HTML</a> |
+                <a href="/css/">CSS</a> |
+                <a href="/js/">JavaScript</a> |
+                <a href="/python/">Python</a>
+            </nav>
+        </li>
+        <li>
+            <h4>Noscript Element</h4>
+            <script>
+                document.write("Hello World!")
+            </script>
+            <noscript>Your browser does not support JavaScript!</noscript>
+        </li>
+        <li>
+            <h4>Object/Video Elements</h4>
+            <video src="../video/toothless_ringtone.mp4" controls width="400" height="300"></video>
+        </li>
+        <li>
+            <h4>Opt Group Elements</h4>
+            <label for="Science">Science Topics:</label>
+                <select  name="physics" id="physics">
+                <optgroup label="Physics">
+                    <option value="time">Time Travel</option>
+                    <option value="space">Space Time Curvature</option>
+                    <option value="experiment">Experiment of Philadelphia</option>
+                </optgroup>
+                <optgroup label="Maths">
+                    <option value="integration">Integration</option>
+                    <option value="differentiation">Differentiation</option>
+                    <option value="probability">Probability</option>
+                </optgroup>
+                </select>
+        </li>
+        <li>
+            <h4>Option Elements</h4>
+                <label for="Science">Science Topics:</label>
+                    <select id="cars">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="opel">Opel</option>
+                    <option value="audi">Audi</option>
+                    </select>
+        </li>
+        <li>
+            <h4>Output Element</h4>
+            <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+                <input type="range" id="a" value="50">
+                +<input type="number" id="b" value="25">
+                =<output name="x" for="a b"></output>
+            </form>
+        </li>
+        <li>
+            <h4>Picture Elements</h4>
+            <picture data="../audio/auo.mp3">
+                <source media="(min-width:1080px)" srcset="../image/shaolin.jpg">
+                <img src="../image/snow.jpg" alt="Flowers" style="width:auto;">
+            </picture>
+        </li>
+        <li>
+            <h4>Pre Elements</h4>
+            <pre>
+                Text in a pre element
+                is displayed in a fixed-width
+                font, and it preserves
+                both      spaces and
+                line breaks
+            </pre>
+        </li>
+        <li>
+            <h4>Progress</h4>
+            <label for="file">Downloading: </label>
+            <progress id="file" value="40" max="100"> 40% </progress>
+        </li>
+        <li>
+            <h4>Short Quotation</h4>
+            <p>WWF's goal is to:
+            <q>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis tenetur accusantium numquam quidem rerum doloribus, ratione dolores facilis asperiores dignissimos!</p>
+        </li>
+        <li>
+            <h4>Rp Elements</h4>
+            <ruby>
+                漢 <rp>(</rp><rt>ㄏㄢˋ</rt><rp>)</rp>
+                </ruby>
+        </li>
+        <li>
+            <h4>S Element</h4>
+            <p><s>Only 50 books are available!</s></p>
+            <p>SOLD OUT!</p>
+        </li>
+        <li>
+            <h4>Samp Element</h4>
+            <p>Message from my computer:</p>
+            <p><samp>Keyboard not found.<br>Press F1 to continue</samp></p>
+        </li>
+        <li>
+            <h4>Search</h4>
+            <search>
+                <form>
+                  <input name="fsrch" id="fsrch" placeholder="Search">
+                </form>
+            </search>
+        </li>
+        <li>
+            <h4>SVG Elements</h4>
+            <svg width="100" height="100">
+                <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="tomato" />
+            </svg>
+        </li>
+        <li>
+            <h4>Sup means Super</h4>
+            The value is (a+b)<sup>2</sup>
+        </li>
+        <li>
+            <h4>Sub Element</h4>
+            The value is log<sub>10</sub>a
+        </li>
+        <li>
+            <h4>Summary</h4>
+            <details>
+                <summary>Epcot Center</summary>
+                <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+            </details>
+        </li>
+        <li>
+            <h4>Strong Element</h4>
+            <strong>I am a strong text, you know!</strong>
+        </li>
+        <li>
+            <h4>Write on the Text Area</h4>
+            <textarea id="textarea" name="textarea" rows="4" cols="50">Write here...</textarea>
+        </li>
+        <li>
+            <h4>Time Element</h4>
+            <p>I Wish IF Next Solar Eclips Should Happen on <time>14th February 2025</time>.</p>
+            
+        </li>
+        <li>
+            <h4>Misspelled Text</h4>
+            <p><u>Does not</u> run in the sun.</p>
+        </li>
+        <li>
+            <h4>Track</h4>
+            <video width="320" height="240" controls>
+                <source src="../video/toothless_ringtone.mp4" type="video/mp4">
+                <source src="../audio/audio.mp3" type="audio/mpeg">
+                <track src="../video/text.vtt" kind="subtitles" srclang="en" label="English">
+                <track src="fgsubtitles_no.vtt" kind="subtitles" srclang="no" label="Bengali">
+            </video>
+        </li>
+        <li>
+            <h4>Variable</h4>
+            <p>The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where <var>b</var> is the base, and <var>h</var> is the vertical height.</p>
+        </li>
+
+
+    </ol>
+
+
+</body>
+</html>
